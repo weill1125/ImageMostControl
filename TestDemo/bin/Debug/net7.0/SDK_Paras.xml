@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paras>
+   <BufferSize>32</BufferSize>
+   <WriteBufToDiscTime>10000</WriteBufToDiscTime>
+   <ReadDiscToBufTime>10000</ReadDiscToBufTime>
+  <FileTransWriteOneSize>32</FileTransWriteOneSize>
+   <FileTransReadOneSize>32</FileTransReadOneSize>
+   <SocketSendBuffer>1</SocketSendBuffer>
+   <SocketReceiveBuffer>1</SocketReceiveBuffer>
+   <WriteSocketSize>1</WriteSocketSize>
+   <ReadSocketSize>1</ReadSocketSize>
+   <WriteBufToSocketTime>10000</WriteBufToSocketTime>
+   <ReadSocketToBufTime>10000</ReadSocketToBufTime>
+   <GetListFromServerTime>10000</GetListFromServerTime>
+   <IfWriteFtpLog>1</IfWriteFtpLog>
+   <IfCompressForTrans>0</IfCompressForTrans>
+   <IfAsynForTrans>1</IfAsynForTrans>
+   <ClearDirTimeOut>10000</ClearDirTimeOut>
+   <WriteTxtLog>1</WriteTxtLog>
+   <RcvMsgTimeout>120000</RcvMsgTimeout>
+   <TotalFilesLength>320000</TotalFilesLength>
+   <socketThreadCount>1</socketThreadCount>
+   <downLoadFileThreadCount>2</downLoadFileThreadCount>
+   <firstListCapacity>30</firstListCapacity>
+   <capacity>30</capacity>
+   <upLoadFileThreadCount>2</upLoadFileThreadCount>
+   <keepAliveInterval>30000</keepAliveInterval>
+   <ConnectTimeout>3000</ConnectTimeout>
+</paras>

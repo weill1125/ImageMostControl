@@ -1,0 +1,32 @@
+﻿{
+  "paras": {
+    "WriteTxtLog": "1",
+    "IfWriteFtpLog": "1",
+    "WriteBufToDiscTime": 10000,
+    "ReadDiscToBufTime": 10000,
+    "FileTransWriteOneSize": 32,
+    "FileTransReadOneSize": 32,
+    "SocketSendBuffer": 1,
+    "SocketReceiveBuffer": 1,
+    "WriteSocketSize": 1,
+    "ReadSocketSize": 1,
+    "GetListFromServerTime": 10000,
+    "IfCompressForTrans": 0,
+    "IfAsynForTrans": 1,
+    "ClearDirTimeOut": 10000,
+    "RcvMsgTimeout": 120000,
+    "TotalFilesLength": 320000,
+    "socketThreadCount": 1,
+    "downLoadFileThreadCount": 2,
+    "firstListCapacity": 30,
+    "capacity": 30,
+    "upLoadFileThreadCount": 2,
+    "keepAliveInterval": 30000,
+    "ConnectTimeout": 3000,
+    "BufferSize": "32",
+    "WriteBufToSocketTime": "6000",
+    "ReadSocketToBufTime": "6000",
+    "UploadTimeOut": "120000",
+    "DownloadTimeOut": "120000"
+  }
+}

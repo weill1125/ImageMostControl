@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Service\Linux传输\**" />
+    <EmbeddedResource Remove="Service\Linux传输\**" />
+    <None Remove="Service\Linux传输\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Log\FastLogger.cs" />
+    <Compile Remove="Log\FastLogLevel.cs" />
+    <Compile Remove="Log\FastLogMessage.cs" />
+    <Compile Remove="Service\ProTransbak.cs" />
+    <Compile Remove="Service\ProTransBCKK.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalResource\GlobalResource.csproj" />
+    <ProjectReference Include="..\LogDLL\LogDLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Log\" />
+  </ItemGroup>
+
+</Project>

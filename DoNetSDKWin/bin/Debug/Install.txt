@@ -1,0 +1,6 @@
+ProductName:ICMS_V04.5N
+Version:V04.5N
+GUID:2560D44E-325C-4CA0-858F-DEA5F9B89980
+
+---------------------------------------remarks----------------------------------------------
+ICMS_V04.5N:web page ref:classid="clsid:2560D44E-325C-4CA0-858F-DEA5F9B89980"

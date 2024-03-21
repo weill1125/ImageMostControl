@@ -1,0 +1,21 @@
+2023/12/1 13:31:23:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>TEST</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>123456</operater_id><trans_type>0000</trans_type><version>01</version><trans_time>2023-12-01T13:31:23+0800</trans_time><trans_id>b26b3f796019444696a0dee4cf34f6f0</trans_id><client_type>01</client_type><client_ip>192.168.232.1</client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>70381587607969011920277743111255</original_text><cipher_text>39683e9483d7608ca0ed68fcecd641c52a9be9d5a81c24327418a288ae61753e60392a0d922b9077</cipher_text></req_body></request>
+2023/12/1 13:31:23:添加连接超时
+2023/12/1 13:31:23:host：22.11.36.102
+port:23456
+2023/12/1 13:31:33:CommonFunc：97
+2023/12/1 13:31:34:7780 Connect socket failed,exception message:套接字操作尝试一个无法连接的主机。 22.11.36.102:23456host:22.11.36.102port:23456
+2023/12/1 13:32:08:申请传输信息结果：7780 Connect socket failed,exception message:套接字操作尝试一个无法连接的主机。 22.11.36.102:23456host:22.11.36.102port:23456
+2023/12/1 13:41:52:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>TEST</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>123456</operater_id><trans_type>0000</trans_type><version>01</version><trans_time>2023-12-01T13:41:52+0800</trans_time><trans_id>49932fd6733e415daf8c6181647932a0</trans_id><client_type>01</client_type><client_ip>192.168.232.1</client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>02964979180016331766122324974665</original_text><cipher_text>f9e1f9f286ac3b6f7a6197e1d4a8377f9dfe0a1ba1ee78276ed1a7d29737e2e560392a0d922b9077</cipher_text></req_body></request>
+2023/12/1 13:41:52:添加连接超时
+2023/12/1 13:41:52:host：22.11.36.102
+port:23456
+2023/12/1 13:41:52:CommonFunc：97
+2023/12/1 13:41:52:7780 Connect socket failed,exception message:套接字操作尝试一个无法连接的主机。 22.11.36.102:23456host:22.11.36.102port:23456
+2023/12/1 13:41:52:申请传输信息结果：7780 Connect socket failed,exception message:套接字操作尝试一个无法连接的主机。 22.11.36.102:23456host:22.11.36.102port:23456
+2023/12/1 13:42:48:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>TEST</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>123456</operater_id><trans_type>0000</trans_type><version>1.0</version><trans_time>2023-12-01T13:42:48+0800</trans_time><trans_id>9ae583558e3e423d8b058af2da17915f</trans_id><client_type>01</client_type><client_ip>192.168.232.1</client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>07029565651368790443542637150522</original_text><cipher_text>bd791a4d85618fb3c7ecad28b7a027528134f85fff01b492d2288f00be20cda960392a0d922b9077</cipher_text></req_body></request>
+2023/12/1 13:42:48:添加连接超时
+2023/12/1 13:42:48:host：22.11.36.102
+port:23456
+2023/12/1 13:42:52:CommonFunc：97
+2023/12/1 13:42:52:7780 Connect socket failed,exception message:套接字操作尝试一个无法连接的主机。 22.11.36.102:23456host:22.11.36.102port:23456
+2023/12/1 13:42:52:申请传输信息结果：7780 Connect socket failed,exception message:套接字操作尝试一个无法连接的主机。 22.11.36.102:23456host:22.11.36.102port:23456

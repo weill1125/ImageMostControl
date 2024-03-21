@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--树节点与控件模板组件交互所需的XML模板
+
+    注：root不构成结构，只代表本设计文档根节点
+-->
+
+<root>
+  <!-- 修订设计 -->
+  <!--
+    |待交互的XML模板|
+	
+  功能描述：树节点与控件模板组件交互所需的XML模板 
+  -->
+  <business_info>
+    <Item Name="businessId" Caption ="业务编号" Type="TextBox" Style="Height:50;Width:200;" Validate="^\d+$" ValidateGroup="1" Text="0001" EventName="LostFocus_Validate"/>
+
+    <!--
+         |控件模板结构|
+
+     功能描述： 根据模板动态构建控件
+
+     节点描述：
+        Name:控件名
+        Caption:显示在控件旁边的控件描述名
+	      Type:控件类型(内部提供) 如:Button、Label、TextBox、Combobox
+	      Style:控件样式，用分号隔开
+	      Visible:显示隐藏控件
+	      Enable:是否启用控件
+	      Validate:控件值的正则验证规则
+	      ValidateGroup:控件值的验证组
+	      Text:控件文本
+	      ErrorMessage:控件验证失败提示的消息
+	      EventName:控件事件名(内部提供) 如:Click_OK 保存，Click_NO取消，Click_Cancel重置
+    -->
+    <docs_info>
+      <doc_info>
+        <Item Name="combobox1" Caption ="控件名称A" Type="Combobox" Style="Height:50;Width:100;" Visible = "True" Enable = "True">
+          <SelectedItem>下拉选项1</SelectedItem>
+          <SelectedItem>下拉选项2</SelectedItem>
+        </Item>
+        <Item Name="textbox1" Caption ="控件名称B" Type="TextBox" Style="Height:50;Width:150;" Validate="^\d+$" ValidateGroup="1" Text="12345678" ErrorMessage="请输入数字！" EventName="LostFocus_Validate" />
+        <Item Name="textbox2" Caption ="控件名称C" Type="TextBox" Style="Height:50;Width:200;" Validate="^\w+$" ValidateGroup="1" Text="aaabbbbccc" EventName="LostFocus_Validate"/>
+        <Item Name="btn1" Type="Button" style="" Text="保存" EventName="Click_OK"/>
+
+        <!--
+		          |图像结构|
+      	
+	      功能描述：代表当前处理是图像信息 ，操作图像或编辑批注后需要传递此交互信息；
+			        不走控件处理线路，直接进行数据存取
+	      注：其他附加属性，交互时自行添加，组件不做任何修改
+	      -->
+        <delete_page>
+          <!--删除图像-->
+          <pagedel/>
+        </delete_page>
+
+        <pages>
+          <page>
+            <!--批注信息-->
+            <postil/>
+          </page>
+        </pages>
+      </doc_info>
+    </docs_info>
+  </business_info>
+
+
+  <!--—————————————————————————————————————————————————-->
+
+
+  <!-- 最初设计 -->
+  <!--
+      |待交互的XML模板|
+  	
+	  功能描述：树节点与控件模板组件交互所需的XML模板
+
+	  节点描述：
+		   NodeType: Control、
+                 其他特殊类型(内部提供) 如:本次特殊处理的节点:Image图像,根据需要自行配置，并特殊处理
+    注：
+       1.节点NodeType不存在或者值为空，将都作为控件模板来进行处理
+       2.节点ParentNode不存在或者值为空，将都作为根节点处理；
+         如果节点ParentNode有值，但值在数据缓存表中找不到父节点记录，则默认新建一个父节点，并挂接到根节点下面
+        
+  -->
+  <businessinfo Name="businessinfo">
+    <业务编号 Name="businessId" Type="TextBox" Style="Height:50;Width:200;" Validate="^\d+$" ValidateGroup="1" Text="0001" EventName="LostFocus_Validate"/>
+
+    <!--
+         |控件模板结构|
+
+     功能描述： 根据模板动态构建控件
+
+     节点描述：
+        节点限定名:显示在控件旁边的控件描述名
+        Name:控件名
+	      Type:控件类型(内部提供) 如:Button、Label、TextBox、Combobox
+	      Style:控件样式，用分号隔开
+	      Visible:显示隐藏控件
+	      Enable:是否启用控件
+	      Validate:控件值的正则验证规则
+	      ValidateGroup:控件值的验证组
+	      Text:控件文本
+	      ErrorMessage:控件验证失败提示的消息
+	      EventName:控件事件名(内部提供) 如:Click_OK 保存，Click_NO取消，Click_Cancel重置
+     -->
+    <doc1 Name="doc1" NodeType="Control" parentNode="docs">
+      <控件名称A Name="combobox1" Type="Combobox" Style="Height:50;Width:100;" Visible = "True" Enable = "True">
+        <Item>下拉选项1</Item>
+        <Item>下拉选项2</Item>
+      </控件名称A>
+      <控件名称B Name="textbox1" Type="TextBox" Style="Height:50;Width:150;" Validate="^\d+$" ValidateGroup="1" Text="12345678" ErrorMessage="请输入数字！" EventName="LostFocus_Validate" />
+      <控件名称C Name="textbox2" Type="TextBox" Style="Height:50;Width:200;" Validate="^\w+$" ValidateGroup="1" Text="aaabbbbccc" EventName="LostFocus_Validate"/>
+      <Button Name="btn1" Type="Button" style="" Text="保存" EventName="Click_OK"/>
+
+      <!--
+		        |图像结构|
+    	
+	    功能描述：代表当前处理是图像信息 ，操作图像或编辑批注后需要传递此交互信息；
+			      不走控件处理线路，直接进行数据存取
+	    注：其他附加属性，交互时自行添加，组件不做任何修改
+	    -->
+      <delete_page Name="delete_page" NodeType="Image" parentNode="doc1">
+        <pagedel Name="pagedel"/>
+      </delete_page>
+
+      <pages Name="pages" NodeType="Image" parentNode="doc1" >
+        <page Name ="page">
+          <!--批注信息-->
+          <postil Name="postil"/>
+        </page>
+      </pages>
+    </doc1>
+  </businessinfo>
+</root>
+
+<!--——————————————————————参考XML————————————————————————-->
+<!-- 
+<businessinfo>
+  <businessId>0001</businessId >
+  <bizMetadata1>aaa</bizMetadata1>
+  <bizMetadata2>aaa</bizMetadata2>
+  <bizMetadata3>aaa</bizMetadata3>
+  <syscode>0005</syscode >
+  <createTeller>aaa</createTeller >
+  <createProvince>test</createProvince >
+  <achrsec>11</achrsec >
+  <custno> abc</custno >
+
+  <docs>
+    <doc1>
+      <uniq_metadata>0001</uniq_metadata >
+      <bizMetadata1>aaa</bizMetadata1>
+      <bizMetadata2>aaa</bizMetadata2>
+      <bizMetadata3>aaa</bizMetadata3>
+      <extMetadata>aaa</extMetadata>
+
+      <delete_page>
+        <pagedel page_index="0"/>
+      </delete_page>
+
+      <pages>
+        <page doc_index="0" modi_time="2001-12-17T09:30:47Z" old_doc_index="0"
+				modi_range="M" file_name="aaaaaa" page_index="0" oper_type="A" old_page_flag="F" page_flag="F">
+          <postil modi_time="2001-12-17T09:30:47Z" remark="aaaaaaaaaaa" file_name="aaaaaaaaaaaaaaa" oper_type="A"/>
+        </page>
+      </pages>
+
+    </doc1>
+    <doc2>
+      <uniq_metadata>0001</uniq_metadata >
+      <bizMetadata1>aaa</bizMetadata1>
+      <bizMetadata2>aaa</bizMetadata2>
+      <bizMetadata3>aaa</bizMetadata3>
+      <extMetadata>aaa</extMetadata >
+    </doc2>
+  </docs>
+
+</businessinfo>
+-->

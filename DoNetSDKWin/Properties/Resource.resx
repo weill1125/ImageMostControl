@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="s9801" xml:space="preserve">
+    <value>Number of connections is full!</value>
+  </data>
+  <data name="s9802" xml:space="preserve">
+    <value>Receiving a command packet error, the head of ommand packet received is not CMMD!</value>
+  </data>
+  <data name="s9803" xml:space="preserve">
+    <value>Get absolute path error!</value>
+  </data>
+  <data name="s9804" xml:space="preserve">
+    <value>Name is the root directory. error!</value>
+  </data>
+  <data name="s9805" xml:space="preserve">
+    <value>Create file errors!</value>
+  </data>
+  <data name="s9806" xml:space="preserve">
+    <value>Get header error!</value>
+  </data>
+  <data name="s9807" xml:space="preserve">
+    <value>Receive files timeout!</value>
+  </data>
+  <data name="s9808" xml:space="preserve">
+    <value>Decompression error!</value>
+  </data>
+  <data name="s9809" xml:space="preserve">
+    <value>Client block is too big!</value>
+  </data>
+  <data name="s9810" xml:space="preserve">
+    <value>Return confirmation message error!</value>
+  </data>
+  <data name="s9811" xml:space="preserve">
+    <value>Open the folder error!</value>
+  </data>
+  <data name="s9812" xml:space="preserve">
+    <value>Read folder error!</value>
+  </data>
+  <data name="s9813" xml:space="preserve">
+    <value>The list is too long!</value>
+  </data>
+  <data name="s9814" xml:space="preserve">
+    <value>Open the file name error!</value>
+  </data>
+  <data name="s9815" xml:space="preserve">
+    <value>Get file attributes error!</value>
+  </data>
+  <data name="s9816" xml:space="preserve">
+    <value>Breakpoint continuingly access to the offset error!</value>
+  </data>
+  <data name="s9817" xml:space="preserve">
+    <value>Definition file read file position error!</value>
+  </data>
+  <data name="s9818" xml:space="preserve">
+    <value>The add side resume offset error!</value>
+  </data>
+  <data name="s9819" xml:space="preserve">
+    <value>Perform a delete exception!</value>
+  </data>
+  <data name="s9820" xml:space="preserve">
+    <value>Derived sub-process exception!</value>
+  </data>
+  <data name="s9821" xml:space="preserve">
+    <value>The Third breakpoint continuingly is not finished, transfer timeout!</value>
+  </data>
+  <data name="s9825" xml:space="preserve">
+    <value>Read data timeout!</value>
+  </data>
+  <data name="s9826" xml:space="preserve">
+    <value>Read data exception!</value>
+  </data>
+  <data name="s9827" xml:space="preserve">
+    <value>Write data timeout!</value>
+  </data>
+  <data name="s9828" xml:space="preserve">
+    <value>Write data exception!</value>
+  </data>
+  <data name="s9829" xml:space="preserve">
+    <value>Read data side Close!</value>
+  </data>
+  <data name="s9830" xml:space="preserve">
+    <value>Write data side Close!</value>
+  </data>
+  <data name="s9831" xml:space="preserve">
+    <value>Establish a connection open failure!</value>
+  </data>
+  <data name="s9850" xml:space="preserve">
+    <value>Read file timeout!</value>
+  </data>
+  <data name="s9851" xml:space="preserve">
+    <value>read the file exception!</value>
+  </data>
+  <data name="s9852" xml:space="preserve">
+    <value>Write the file timeout!</value>
+  </data>
+  <data name="s9853" xml:space="preserve">
+    <value>Write the file exception</value>
+  </data>
+  <data name="s9875" xml:space="preserve">
+    <value>Failed to apply address!</value>
+  </data>
+  <data name="s9876" xml:space="preserve">
+    <value>Apply compression buffer failed!</value>
+  </data>
+  <data name="s9877" xml:space="preserve">
+    <value>Failed to open the local file name!</value>
+  </data>
+  <data name="s9878" xml:space="preserve">
+    <value>fstat obtain information failure!</value>
+  </data>
+  <data name="s9879" xml:space="preserve">
+    <value>Send the head of ommand packet failure</value>
+  </data>
+  <data name="s9880" xml:space="preserve">
+    <value>Read file error!</value>
+  </data>
+  <data name="s9881" xml:space="preserve">
+    <value>Failed to send data header!</value>
+  </data>
+  <data name="s9882" xml:space="preserve">
+    <value>Send data error!</value>
+  </data>
+  <data name="s9883" xml:space="preserve">
+    <value>Receive confirmation error!</value>
+  </data>
+  <data name="s9884" xml:space="preserve">
+    <value>Failed to receive data header!</value>
+  </data>
+  <data name="s9885" xml:space="preserve">
+    <value>logic_readSM failed to read data from the network!</value>
+  </data>
+  <data name="s9886" xml:space="preserve">
+    <value>Decompression error!</value>
+  </data>
+  <data name="s9887" xml:space="preserve">
+    <value>Return to confirm the information (datahdr) error!</value>
+  </data>
+  <data name="s9888" xml:space="preserve">
+    <value>Receives the command packet error!</value>
+  </data>
+  <data name="s9889" xml:space="preserve">
+    <value>FTPrecv writing files error!</value>
+  </data>
+  <data name="s9890" xml:space="preserve">
+    <value>Fseek failure!</value>
+  </data>
+  <data name="s9891" xml:space="preserve">
+    <value>The breakpoint continuingly offset error!</value>
+  </data>
+  <data name="s9892" xml:space="preserve">
+    <value>Access to the side of address failure!</value>
+  </data>
+  <data name="s9893" xml:space="preserve">
+    <value>Write to the side of address failure!</value>
+  </data>
+  <data name="s9894" xml:space="preserve">
+    <value>Invalid socket</value>
+  </data>
+  <data name="s9895" xml:space="preserve">
+    <value>Get the host infomation error</value>
+  </data>
+  <data name="s9896" xml:space="preserve">
+    <value>Parsing code error</value>
+  </data>
+  <data name="s9897" xml:space="preserve">
+    <value>select error</value>
+  </data>
+</root>

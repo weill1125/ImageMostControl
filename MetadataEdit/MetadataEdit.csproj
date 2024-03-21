@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Base\Component\**" />
+    <Compile Remove="Business\CustomizeEvent\**" />
+    <Compile Remove="Common\**" />
+    <Compile Remove="Support\ProviderEffect\**" />
+    <Compile Remove="Support\ProviderEvent\**" />
+    <Compile Remove="Support\SupportControl\**" />
+    <EmbeddedResource Remove="Base\Component\**" />
+    <EmbeddedResource Remove="Business\CustomizeEvent\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="Support\ProviderEffect\**" />
+    <EmbeddedResource Remove="Support\ProviderEvent\**" />
+    <EmbeddedResource Remove="Support\SupportControl\**" />
+    <None Remove="Base\Component\**" />
+    <None Remove="Business\CustomizeEvent\**" />
+    <None Remove="Common\**" />
+    <None Remove="Support\ProviderEffect\**" />
+    <None Remove="Support\ProviderEvent\**" />
+    <None Remove="Support\SupportControl\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Business\Operate\DocInfo\DocInfoOperate.cs" />
+    <Compile Remove="Business\Operate\DocInfo\IDocInfocOperate.cs" />
+    <Compile Remove="Business\Operate\PageInfo\IPageInfoOperate.cs" />
+    <Compile Remove="Business\Operate\PageInfo\PageInfoOperate.cs" />
+    <Compile Remove="MetadataEdit.cs" />
+    <Compile Remove="MetadataEdit.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="MetadataEdit.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AntDesign" Version="0.15.4" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalResource\GlobalResource.csproj" />
+    <ProjectReference Include="..\LogDLL\LogDLL.csproj" />
+  </ItemGroup>
+
+</Project>

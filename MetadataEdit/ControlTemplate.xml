@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ControlTemplate>
+  <Template Name="doc1">
+    <Item Name="combobox1" Caption="控件1" Type="Combobox" Style="Height:50;Width:100;" Visible = "True" Enable = "True">
+      <SelectedItem>下拉选项1</SelectedItem>
+      <SelectedItem>下拉选项2</SelectedItem>
+    </Item>
+    <Item Name="textbox1" Caption="控件2" Type="TextBox" Style="Height:50;Width:150;" Validate="^\d+$" ValidateGroup="1" Text="12345678" ErrorMessage="请输入数字！" EventName="LostFocus_Validate" />
+    <Item Name="textbox2" Caption="控件3" Type="TextBox" Style="Height:50;Width:200;" Validate="^\w+$" ValidateGroup="1" Text="aaabbbbccc" EventName="LostFocus_Validate"/>
+    <Item Name="btn1" Caption="控件4" Type="Button" style="" Text="保存" EventName="Click_OK"/>
+  </Template>
+  <Template Name="doc2">
+    <Item Name="combobox1" Type="Combobox" Style="Height:50;Width:100;" Visible = "True" Enable = "True">
+      <SelectedItem>下拉选项1</SelectedItem>
+      <SelectedItem>下拉选项2</SelectedItem>
+    </Item>
+    <Item Name="textbox1" Type="TextBox" Style="Height:50;Width:150;" Validate="^\d+$" ValidateGroup="1" Text="12345678" ErrorMessage="请输入数字！" EventName="LostFocus_Validate" />
+    <Item Name="textbox2" Type="TextBox" Style="Height:50;Width:200;" Validate="^\w+$" ValidateGroup="1" Text="aaabbbbccc" EventName="LostFocus_Validate"/>
+    <Item Name="btn1" Type="Button" style="" Text="保存" EventName="Click_OK"/>
+  </Template>
+</ControlTemplate>

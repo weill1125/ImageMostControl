@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DoNetSDK\**" />
+    <EmbeddedResource Remove="DoNetSDK\**" />
+    <None Remove="DoNetSDK\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="DoNetSDK\DoNetSDK.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TestDemos.exe" version="1.0.0.0" publicKeyToken="b9aad5b34fd551e5" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TestDemos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TestDemos.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DoNetSDKV07.3C.dll" size="98816">
+      <assemblyIdentity name="DoNetSDKV07.3C" version="5.1.0.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XMydRodtODxkDZgnPK1dWUHZGJJ3RdBARyfRjKKHsMQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="log4net.dll" size="303104">
+      <assemblyIdentity name="log4net" version="2.0.15.0" publicKeyToken="669E0DDF0BB1AA2A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VQTKzGDSWTQFGAlylmODlckozRPJ/9QzuoMn5NGwrow=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestDemos.exe" size="9632">
+      <assemblyIdentity name="TestDemos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bcDtz0+i+RAS6FqKgj3oaal5LcIhDXHfm9iOmSprSqM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TestDemos.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DIANA\ASUS" issuerKeyHash="8801d9ccd405f30922c4d489d342c338ec6e2d61" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sejXAOGQsFkROiXzyNKQMAY2AwaBmPo7zJgBnty8YcY=</DigestValue></Reference></SignedInfo><SignatureValue>FED8lBCh7yyr07hfzsW7itgZMrrI9SsdCa2nS0WSDj6xJhfhR6YaU+arM/cI16xMVmTGFLFXelzzcO8OgH7jbLqEit5Q5h1Y3BBvx7d13hSIHOuoctx9Q07ymEoUpUbt8d1TrZo42kmDeD+Iuq1eERhd6DOKq+HFCOWbCI4si3o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rHUbiEaL34D9oG9zZ9uj/gCeehTY1vYpVzPtybbY2vtHCkxNtcGSONRkRwn01tgYIv+ixmjbzmjXouK7x/rYHEBDgu3LnXFrJhZMs+bX1Vc+TBm5HyxvTgTVkSJ6EdV1OcafO4RdT/BVykz1QY5Mjx3XrgGLxW3FVM4XhWf6kmE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c661bcdc9e0198cc3bfa9881060336063090d2c8f3253a1159b090e100d7e8b1" Description="" Url=""><as:assemblyIdentity name="TestDemos.exe" version="1.0.0.0" publicKeyToken="b9aad5b34fd551e5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DIANA\ASUS</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>u/2CumpySQsKAHejF3hGtav2NsjljehTHhjt0BanfXI=</DigestValue></Reference></SignedInfo><SignatureValue>o3mQkSShPElxrv5Fcaojb0hcEV5B/4SCHFhCqfnoaC0bvpX2YCdTTF+tVzZ8aWihdrEm+Fb9HsGLDSiNWU9aqGRje+JanDfaDfKJ2M1bHupk/kHInOpTUq23bORmr/R/BBgj6N2jvImUZ1pITXUIJPW1M2oSH09+h9UDhSv5FsE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rHUbiEaL34D9oG9zZ9uj/gCeehTY1vYpVzPtybbY2vtHCkxNtcGSONRkRwn01tgYIv+ixmjbzmjXouK7x/rYHEBDgu3LnXFrJhZMs+bX1Vc+TBm5HyxvTgTVkSJ6EdV1OcafO4RdT/BVykz1QY5Mjx3XrgGLxW3FVM4XhWf6kmE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQfEn3w9VgSpdHLFE/4058ZjANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQARABJAEEATgBBAFwAQQBTAFUAUzAeFw0yMzEyMDEwNTQ1MTVaFw0yNDExMzAxMTQ1MTVaMB8xHTAbBgNVBAMeFABEAEkAQQBOAEEAXABBAFMAVQBTMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsdRuIRovfgP2gb3Nn26P+AJ56FNjW9ilXM+3Jttja+0cKTE21wZI41GRHCfTW2Bgi/6LGaNvOaNei4rvH+tgcQEOC7cudcWsmFkyz5tfVVz5MGbkfLG9OBNWRInoR1XU5xp87hF1P8FXKTPVBjkyPHdeuAYvFbcVUzheFZ/qSYQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACmqevmRE1LPde3bXNzFyyty9c9xmzUi61zDb4ENlHvGI4GHkhgpdYF20OhYO+fsxh3DCI0+Qjs/hFJXCPGp/PmftGMI/5XxNkORNpfW1g9cEa1hCghCfY0cVlBepjDyDkNNwi67f1JTExNHvU9qIzNADDh0Esc/95lhTC6E03Hj</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

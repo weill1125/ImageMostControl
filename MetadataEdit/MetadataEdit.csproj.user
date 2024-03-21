@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="DataTables\BaseDateTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DataTables\BusinessTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DataTables\DeletedPageTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DataTables\DocTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DataTables\PageTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DataTables\VersionTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Support\GlobalCache\GlobalData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

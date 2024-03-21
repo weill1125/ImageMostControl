@@ -1,0 +1,7 @@
+2023/12/1 14:12:26:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>TEST</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>123456</operater_id><trans_type>0000</trans_type><version>1.0</version><trans_time>2023-12-01T14:12:09+0800</trans_time><trans_id>f70650881cba4828aede99add76d483f</trans_id><client_type>01</client_type><client_ip>192.168.232.1</client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>63792674150487766612451438124374</original_text><cipher_text>3e7c4a51b4d49729751b16371c470d4dd9a9a68506289c7e588f717c7c49a06b60392a0d922b9077</cipher_text></req_body></request>
+2023/12/1 14:12:26:添加连接超时
+2023/12/1 14:12:26:host：22.11.36.102
+port:23456
+2023/12/1 14:12:29:socket关闭
+2023/12/1 14:12:29:7780 Connect socket time out! host:22.11.36.102 port:23456
+2023/12/1 14:12:29:申请传输信息结果：7780 Connect socket time out! host:22.11.36.102 port:23456

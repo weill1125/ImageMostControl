@@ -1,0 +1,14 @@
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.csproj.AssemblyReference.cache
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.Properties.Resource.resources
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.csproj.GenerateResource.cache
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.GeneratedMSBuildEditorConfig.editorconfig
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.AssemblyInfoInputs.cache
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.AssemblyInfo.cs
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.csproj.CoreCompileInputs.cache
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\net7.0\DoNetSDK.deps.json
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\net7.0\DoNetSDK.dll
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\net7.0\DoNetSDK.pdb
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.dll
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\refint\DoNetSDK.dll
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\DoNetSDK.pdb
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\net7.0\ref\DoNetSDK.dll

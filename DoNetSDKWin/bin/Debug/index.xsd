@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2009 (http://www.altova.com) by desertsmoke (ttt) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--W3C Schema 由 XMLSpy v2006 U 创建 (http://www.altova.com)-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="batch">
+		<xs:annotation>
+			<xs:documentation>提交批次</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="business_info" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pkuuid" nillable="false">
+		<xs:annotation>
+			<xs:documentation>影像平台生成内容对象主键</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="32"/>
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="achr_sec" nillable="true">
+		<xs:annotation>
+			<xs:documentation>保密级别</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="2"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="biz_metadata1" nillable="false">
+		<xs:annotation>
+			<xs:documentation>业务索引元数据1</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="64"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="biz_metadata2" nillable="true">
+		<xs:annotation>
+			<xs:documentation>业务索引元数据2</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="64"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="biz_metadata3" nillable="true">
+		<xs:annotation>
+			<xs:documentation>业务索引元数据3</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="64"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="business_info">
+		<xs:annotation>
+			<xs:documentation>交易数据信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="biz_metadata1"/>
+				<xs:element ref="biz_metadata2" minOccurs="0"/>
+				<xs:element ref="biz_metadata3" minOccurs="0"/>
+				<xs:element ref="source_system"/>
+				<xs:element ref="create_province"/>
+				<xs:element ref="check_telno"/>
+				<xs:element ref="achr_sec"/>
+				<xs:element ref="cust_no"/>
+				<xs:element ref="docs_info"/>
+			</xs:all>
+			<xs:attribute name="modi_meta" use="required">
+				<xs:annotation>
+					<xs:documentation>是否修改交易元数据   Y/y 修改；N/n未修改(Default)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value=""/>
+						<xs:enumeration value="Y"/>
+						<xs:enumeration value="y"/>
+						<xs:enumeration value="N"/>
+						<xs:enumeration value="n"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="modi_time" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>交易创建时间或交易修改时间</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="check_telno" nillable="false">
+		<xs:annotation>
+			<xs:documentation>入库柜员</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="20"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="create_province" nillable="false">
+		<xs:annotation>
+			<xs:documentation>数据物理产生地</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="5"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="cust_no">
+		<xs:annotation>
+			<xs:documentation>客户号</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="17"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="delete_page">
+		<xs:annotation>
+			<xs:documentation>待删除内容信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="pagedel" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="docs_info">
+		<xs:annotation>
+			<xs:documentation>交易内容信息集合</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="doc_info" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="doc_info">
+		<xs:annotation>
+			<xs:documentation>一种类型交易内容信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="pkuuid">
+					<xs:annotation>
+						<xs:documentation>平台生成内容对象主键</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="uniq_metadata"/>
+				<xs:element ref="index_metadata1" minOccurs="0"/>
+				<xs:element ref="index_metadata2" minOccurs="0"/>
+				<xs:element ref="index_metadata3" minOccurs="0"/>
+				<xs:element ref="ext_metadata" minOccurs="0"/>
+				<xs:element ref="delete_page" minOccurs="0"/>
+				<xs:element ref="pages"/>
+				<xs:element ref="version_list" minOccurs="0"/>
+			</xs:all>
+			<xs:attribute name="data_type" use="required">
+				<xs:annotation>
+					<xs:documentation>内容数据类型</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="oper_type" use="required">
+				<xs:annotation>
+					<xs:documentation>操作类型 A/a新增(Default)；E/e修改；D/d删除；I/i忽略</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="a"/>
+						<xs:enumeration value="E"/>
+						<xs:enumeration value="e"/>
+						<xs:enumeration value="D"/>
+						<xs:enumeration value="d"/>
+						<xs:enumeration value="I"/>
+						<xs:enumeration value="i"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="full_index" use="required">
+				<xs:annotation>
+					<xs:documentation>是否加入全文索引       Y/y加入；N/n不加入(Default)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value=""/>
+						<xs:enumeration value="Y"/>
+						<xs:enumeration value="y"/>
+						<xs:enumeration value="N"/>
+						<xs:enumeration value="n"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="new_version" use="required">
+				<xs:annotation>
+					<xs:documentation>是否创建新版本       Y/y创建；N/n不创建(Default)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value=""/>
+						<xs:enumeration value="Y"/>
+						<xs:enumeration value="y"/>
+						<xs:enumeration value="N"/>
+						<xs:enumeration value="n"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="modi_meta" use="required">
+				<xs:annotation>
+					<xs:documentation>交易元数据是否修改   Y/y 修改；N/n未修改</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value=""/>
+						<xs:enumeration value="Y"/>
+						<xs:enumeration value="y"/>
+						<xs:enumeration value="N"/>
+						<xs:enumeration value="n"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="modi_time" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>对象内容修改时间</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="security" use="required">
+				<xs:annotation>
+					<xs:documentation>保密级别</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+						<xs:minLength value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="archieved" use="required">
+				<xs:annotation>
+					<xs:documentation>是否归档</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value=""/>
+						<xs:enumeration value="Y"/>
+						<xs:enumeration value="y"/>
+						<xs:enumeration value="N"/>
+						<xs:enumeration value="n"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="expire_date" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>失效日期</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ext_metadata">
+		<xs:annotation>
+			<xs:documentation>扩展元数据</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="200"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="index_metadata1" nillable="true">
+		<xs:annotation>
+			<xs:documentation>索引元数据1</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="64"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="index_metadata2" nillable="true">
+		<xs:annotation>
+			<xs:documentation>索引元数据2</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="64"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="index_metadata3" nillable="true">
+		<xs:annotation>
+			<xs:documentation>索引元数据3</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="64"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="page">
+		<xs:annotation>
+			<xs:documentation>一个待入库内容信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="postil" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="page_index" type="xs:integer" use="required">
+				<xs:annotation>
+					<xs:documentation>内容文件在对象中的索引号</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="doc_index" type="xs:integer" use="required">
+				<xs:annotation>
+					<xs:documentation>文档页号</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="file_name">
+				<xs:annotation>
+					<xs:documentation>文件名</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="page_flag" use="required">
+				<xs:annotation>
+					<xs:documentation>正反面标识    B/b 反面，F/f正面</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="F"/>
+						<xs:enumeration value="f"/>
+						<xs:enumeration value="B"/>
+						<xs:enumeration value="b"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="oper_type" use="required">
+				<xs:annotation>
+					<xs:documentation>操作类型 A/a新增(Default)；E/e修改</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="a"/>
+						<xs:enumeration value="E"/>
+						<xs:enumeration value="e"/>
+						<xs:enumeration value="I"/>
+						<xs:enumeration value="i"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="old_doc_index" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation>原文档页号</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="old_page_flag">
+				<xs:annotation>
+					<xs:documentation>原正反面标识    B/b 反面，F/f正面</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="F"/>
+						<xs:enumeration value="f"/>
+						<xs:enumeration value="B"/>
+						<xs:enumeration value="b"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="modi_range" use="required">
+				<xs:annotation>
+					<xs:documentation>修改范围 M/m 仅修改元数据；C/c仅修改内容文件；A/a 修改元数据+内容文件;N/n未修改(Default)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="M"/>
+						<xs:enumeration value="m"/>
+						<xs:enumeration value="C"/>
+						<xs:enumeration value="c"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="a"/>
+						<xs:enumeration value="N"/>
+						<xs:enumeration value="n"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="modi_time" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>内容文件创建或修改时间</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pagedel" nillable="0">
+		<xs:annotation>
+			<xs:documentation>一个待删除内容信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="page_index" type="xs:integer" use="required">
+				<xs:annotation>
+					<xs:documentation>内容文件在内容对象中的索引号</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pages">
+		<xs:annotation>
+			<xs:documentation>待入库内容列表信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="page" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="postil">
+		<xs:annotation>
+			<xs:documentation>内容批注信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="file_name">
+				<xs:annotation>
+					<xs:documentation>批注文件名</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="remark" use="optional">
+				<xs:annotation>
+					<xs:documentation>备注信息</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="128"/>
+						<xs:minLength value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="oper_type" use="required">
+				<xs:annotation>
+					<xs:documentation>操作类型  A/a新增（Default）	； E/e修改；I/i忽略</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="a"/>
+						<xs:enumeration value="E"/>
+						<xs:enumeration value="e"/>
+						<xs:enumeration value="I"/>
+						<xs:enumeration value="i"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="modi_time" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>批注修改时间</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="source_system" nillable="false">
+		<xs:annotation>
+			<xs:documentation>数据源系统标识</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="4"/>
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="uniq_metadata" nillable="false">
+		<xs:annotation>
+			<xs:documentation>唯一索引元数据</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="64"/>
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ver">
+		<xs:annotation>
+			<xs:documentation>一个版本信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="ver_no" use="required">
+				<xs:annotation>
+					<xs:documentation>版本号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="4"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="modi_time" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>版本修改时间</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="modi_by" use="required">
+				<xs:annotation>
+					<xs:documentation>版本修改人</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="32"/>
+						<xs:minLength value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="version_list">
+		<xs:annotation>
+			<xs:documentation>历史版本列表信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ver" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

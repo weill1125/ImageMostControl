@@ -1,0 +1,17 @@
+E:\影像系统文件\20121105\海外\ICMS_V03.3C_B01\DoNetSDK\bin\Debug\DoNetSDK.dll
+E:\影像系统文件\20121105\海外\ICMS_V03.3C_B01\DoNetSDK\bin\Debug\DoNetSDK.pdb
+E:\影像系统文件\20121105\海外\ICMS_V03.3C_B01\DoNetSDK\obj\Debug\ResolveAssemblyReference.cache
+E:\影像系统文件\20121105\海外\ICMS_V03.3C_B01\DoNetSDK\obj\Debug\DoNetSDK.dll
+E:\影像系统文件\20121105\海外\ICMS_V03.3C_B01\DoNetSDK\obj\Debug\DoNetSDK.pdb
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\DoNetSDKV07.3C.dll
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\DoNetSDKV07.3C.pdb
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\log4net.pdb
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\log4net.xml
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\DoNetSDK.csproj.AssemblyReference.cache
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\Com.Boc.Icms.DoNetSDK.Properties.Resource.resources
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\DoNetSDK.csproj.GenerateResource.cache
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\DoNetSDK.csproj.CoreCompileInputs.cache
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\DoNetSDK.csproj.CopyComplete
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\DoNetSDKV07.3C.dll
+F:\VisualStudioTest\DMSSocket\DoNetSDK\obj\Debug\DoNetSDKV07.3C.pdb
+F:\VisualStudioTest\DMSSocket\DoNetSDK\bin\Debug\DoNetSDKV07.3C.tlb

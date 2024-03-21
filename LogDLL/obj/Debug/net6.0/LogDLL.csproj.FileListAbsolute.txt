@@ -1,0 +1,15 @@
+F:\方正国际\新创初版\LogDLL\bin\Debug\net6.0\LogDLLV01.0C.deps.json
+F:\方正国际\新创初版\LogDLL\bin\Debug\net6.0\LogDLLV01.0C.dll
+F:\方正国际\新创初版\LogDLL\bin\Debug\net6.0\LogDLLV01.0C.pdb
+F:\方正国际\新创初版\LogDLL\bin\Debug\net6.0\GlobalResourceV01.0C.dll
+F:\方正国际\新创初版\LogDLL\bin\Debug\net6.0\GlobalResourceV01.0C.pdb
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLL.csproj.AssemblyReference.cache
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLL.GeneratedMSBuildEditorConfig.editorconfig
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLL.AssemblyInfoInputs.cache
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLL.AssemblyInfo.cs
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLL.csproj.CoreCompileInputs.cache
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLL.csproj.CopyComplete
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLLV01.0C.dll
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\refint\LogDLLV01.0C.dll
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\LogDLLV01.0C.pdb
+F:\方正国际\新创初版\LogDLL\obj\Debug\net6.0\ref\LogDLLV01.0C.dll

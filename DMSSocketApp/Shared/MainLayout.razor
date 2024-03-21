@@ -1,0 +1,189 @@
+﻿@inherits LayoutComponentBase
+@inject IConfirmService _confirmService
+
+<PageTitle>DMSSocketApp</PageTitle>
+
+<div class="page">
+    <div style="margin-left:5px;margin-bottom: 10px;">
+        <Dropdown Trigger="@(new Trigger[] { Trigger.Click })">
+            <Overlay>
+                <Menu>
+                    <MenuItem OnClick='e => {CheckSocket ="新增交易信息及影像";RequestType="0001"; ListVisible(); }'>新增交易信息及影像 </MenuItem>                    
+                    <MenuItem OnClick='e => {CheckSocket ="通过pkuuid调阅影像";RequestType="0002"; ListVisible(); }'>通过pkuuid调阅影像 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过bizId调阅影像";RequestType="0003"; ListVisible(); }'>通过bizId调阅影像 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="根据交易编号删除该交易信息";RequestType="0005"; ListVisible(); }'>根据交易编号删除该交易信息 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="根据pkuuid删除指定版本或最新版本影像";RequestType="0006"; ListVisible(); }'>根据pkuuid删除指定版本或最新版本影像 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过page维度进行调阅影像"; RequestType="0010";ListVisible(); }'>通过page维度进行调阅影像 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过page维度删除影像";RequestType="0011"; ListVisible(); }'>通过page维度删除影像 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过交易编号查询影像列表";RequestType="0013"; ListVisible(); }'>通过交易编号查询影像列表 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="判断bizId是否存在";RequestType="0014"; ListVisible(); }'>判断bizId是否存在 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="判断pkuuid是否存在";RequestType="0015"; ListVisible(); }'>判断pkuuid是否存在 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="根据page列表删除元数据和影像文件";RequestType="0018"; ListVisible(); }'>根据page列表删除元数据和影像文件 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="根据pkuuid列表删除元数据和影像文件";RequestType="0019"; ListVisible(); }'>根据pkuuid列表删除元数据和影像文件 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过page列表调阅影像";RequestType="0020"; ListVisible(); }'>通过page列表调阅影像</MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过bizMetadata列表查询影像列表";RequestType="0021"; ListVisible(); }'>通过bizMetadata列表查询影像列表 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过uniqMetadata下载";RequestType="0022"; ListVisible(); }'>通过uniqMetadata下载 </MenuItem>
+                    <MenuItem OnClick='e => {CheckSocket ="通过pkuuid列表调阅影像";RequestType="0023"; ListVisible(); }'>通过pkuuid列表调阅影像 </MenuItem>
+                </Menu>
+            </Overlay>
+            <ChildContent>
+                <Button>@CheckSocket <Icon Type="down" /></Button>
+            </ChildContent>
+        </Dropdown>
+
+        <Button style="margin-left:30px;" OnClick="TestBtn"> 测试</Button>
+    </div>
+   
+    <div style="border: solid;border-color: #f2f3f4;border-style: ridge;width: 330px;">
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="22.11.36.102" Size="@InputSize.Large" @bind-Value="@ip">
+            <Prefix>
+                <label>Ip:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="23456" Size="@InputSize.Large" @bind-Value="@port">
+            <Prefix>
+                <label>Port:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="COS1" Size="@InputSize.Large" @bind-Value="@syscode">
+            <Prefix>
+                <label>Syscode:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="003" Size="@InputSize.Large" @bind-Value="@bankcode">
+            <Prefix>
+                <label>Bankcode:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="00001" Size="@InputSize.Large" @bind-Value="@branchcode">
+            <Prefix>
+                <label>Branchcode:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="1234567" Size="@InputSize.Large" @bind-Value="@operaterid">
+            <Prefix>
+                <label>Operaterid:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="1.0" Size="@InputSize.Large" @bind-Value="@version">
+            <Prefix>
+                <label>Version:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="00001" Size="@InputSize.Large" @bind-Value="@imagestoragemech">
+            <Prefix>
+                <label>Imagestoragemech:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;">
+            <Input Placeholder="TEST-COS" Size="@InputSize.Large" @bind-Value="@imagelibraryident">
+            <Prefix>
+                <label>Imagelibraryident:</label>
+            </Prefix>
+            </Input>
+        </div>
+    </div>
+    <div style="margin-left: 350px;margin-top: -468px;border: solid;border-color: #f2f3f4;border-style: ridge;width: 330px;display:@IsShow">
+        <div style="width:300px;margin:10px;display:@bizVisibility">
+            <Input Placeholder="" Size="@InputSize.Large" @bind-Value="@biz">
+            <Prefix>
+                <label>Biz:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@pkuuidVisibility">
+            <Input Placeholder="" Size="@InputSize.Large" @bind-Value="@pkuuid">
+            <Prefix>
+                <label>Pkuuid:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@uniqmetadataVisibility">
+            <Input Placeholder="" Size="@InputSize.Large" @bind-Value="@uniqmetadata">
+            <Prefix>
+                <label>UniqMetadata:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@iscurrentversionVisibility">
+            <Input Placeholder="Y" Size="@InputSize.Large" @bind-Value="@iscurrentversion">
+            <Prefix>
+                <label>Iscurrentversion:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@versionlabelVisibility">
+            <Input Placeholder="1.0" Size="@InputSize.Large" @bind-Value="@versionlabel">
+            <Prefix>
+                <label>Versionlabel:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@isoriginalVisibility">
+            <Input Placeholder="Y" Size="@InputSize.Large" @bind-Value="@isoriginal">
+            <Prefix>
+                <label>Isoriginal:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@includecontentfileVisibility">
+            <Input Placeholder="Y" Size="@InputSize.Large" @bind-Value="@includecontentfile">
+            <Prefix>
+                <label>Includecontentfile:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@datatypesVisibility">
+            <Input Placeholder="" Size="@InputSize.Large" @bind-Value="@datatypes">
+            <Prefix>
+                <label>Datatypes:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@pageflagVisibility">
+            <Input Placeholder="F" Size="@InputSize.Large" @bind-Value="@pageflag">
+            <Prefix>
+                <label>Pageflag:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@pageuuidVisibility">
+            <Input Placeholder="" Size="@InputSize.Large" @bind-Value="@pageuuid">
+            <Prefix>
+                <label>Pageuuid:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@pageindexVisibility">
+            <Input Placeholder="" Size="@InputSize.Large" @bind-Value="@pageindex">
+            <Prefix>
+                <label>Pageindex:</label>
+            </Prefix>
+            </Input>
+        </div>
+        <div style="width:300px;margin:10px;display:@docindexVisibility">
+            <Input Placeholder="" Size="@InputSize.Large" @bind-Value="@docindex">
+            <Prefix>
+                <label>Docindex:</label>
+            </Prefix>
+            </Input>
+        </div>
+    </div>
+   
+</div>

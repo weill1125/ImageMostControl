@@ -1,0 +1,60 @@
+2023/12/18 14:18:28:通过pkuuid调阅影像
+2023/12/18 14:18:28:Begin applying address
+2023/12/18 14:18:28:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>TEST</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>1234567</operater_id><trans_type>0000</trans_type><version>1.0</version><trans_time>2023-12-18T14:18:28+0800</trans_time><trans_id>47851678c96b48cf947add0b9901b1ef</trans_id><client_type>01</client_type><client_ip>192.168.232.1  </client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>52889915630034016172249178107143</original_text><cipher_text>b4d8c164dee1a55134f0f51f7c6225eaaaf5277cb5abe71085a35076b0c753b660392a0d922b9077</cipher_text></req_body></request>
+2023/12/18 14:18:28:添加连接超时
+2023/12/18 14:18:28:host：22.11.36.102   port:23456
+2023/12/18 14:18:31:socket关闭
+2023/12/18 14:18:31:CommonFunc：138
+2023/12/18 14:18:31:7780 Connect socket time out! host:22.11.36.102 port:23456
+2023/12/18 14:18:31:申请传输信息结果：7780 Connect socket time out! host:22.11.36.102 port:23456
+2023/12/18 14:18:35:
+2023/12/18 14:18:35:Appling for address and port failed.Return code:;Return message:
+2023/12/18 14:18:35:Return code: ; Return message:; Return data:
+2023/12/18 14:19:00:新增交易信息及影像
+2023/12/18 14:19:00:Begin applying address
+2023/12/18 14:19:00:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>TEST</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>1234567</operater_id><trans_type>0000</trans_type><version>1.0</version><trans_time>2023-12-18T14:19:00+0800</trans_time><trans_id>f557b2d4c20c468e9a1c2506ecd89351</trans_id><client_type>01</client_type><client_ip>192.168.232.1  </client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>52889915630034016172249178107143</original_text><cipher_text>b4d8c164dee1a55134f0f51f7c6225eaaaf5277cb5abe71085a35076b0c753b660392a0d922b9077</cipher_text></req_body></request>
+2023/12/18 14:19:00:添加连接超时
+2023/12/18 14:19:00:host：22.11.36.102   port:23456
+2023/12/18 14:19:03:socket关闭
+2023/12/18 14:19:03:CommonFunc：138
+2023/12/18 14:19:03:7780 Connect socket time out! host:22.11.36.102 port:23456
+2023/12/18 14:19:03:申请传输信息结果：7780 Connect socket time out! host:22.11.36.102 port:23456
+2023/12/18 14:19:03:
+2023/12/18 14:19:03:Appling for address and port failed.Return code:;Return message:
+2023/12/18 14:19:03:Return code: ; Return message:; Return data:
+2024/1/2 10:53:00:通过pkuuid调阅影像
+2024/1/2 10:53:04:Begin applying address
+2024/1/2 10:53:04:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>COS1</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>1234567</operater_id><trans_type>0000</trans_type><version>1.0</version><trans_time>2024-01-02T10:53:03+0800</trans_time><trans_id>aebdedb6e7834688970137c27a0b4843</trans_id><client_type>01</client_type><client_ip>192.168.232.1  </client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>65433415425962917716075327660405</original_text><cipher_text>95ddc889f0f0a9657ab3c7ccb54d646fc15cc86f0b3c69146573b1820806244360392a0d922b9077</cipher_text></req_body></request>
+2024/1/2 10:53:04:添加连接超时
+2024/1/2 10:53:04:host：22.11.36.102   port:23456
+2024/1/2 10:53:07:socket关闭
+2024/1/2 10:53:07:CommonFunc：138
+2024/1/2 10:53:07:7780 Connect socket time out! host:22.11.36.102 port:23456
+2024/1/2 10:53:07:申请传输信息结果：7780 Connect socket time out! host:22.11.36.102 port:23456
+2024/1/2 10:53:07:
+2024/1/2 10:53:07:Appling for address and port failed.Return code:;Return message:
+2024/1/2 10:53:07:Return code: ; Return message:; Return data:
+2024/1/2 10:53:14:通过pkuuid调阅影像
+2024/1/2 10:53:22:Begin applying address
+2024/1/2 10:53:22:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>COS1</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>1234567</operater_id><trans_type>0000</trans_type><version>1.0</version><trans_time>2024-01-02T10:53:22+0800</trans_time><trans_id>6d810d22662443cfa610e23f7ae495ea</trans_id><client_type>01</client_type><client_ip>192.168.232.1  </client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>65433415425962917716075327660405</original_text><cipher_text>95ddc889f0f0a9657ab3c7ccb54d646fc15cc86f0b3c69146573b1820806244360392a0d922b9077</cipher_text></req_body></request>
+2024/1/2 10:53:22:添加连接超时
+2024/1/2 10:53:22:host：22.11.36.102   port:23456
+2024/1/2 10:53:25:socket关闭
+2024/1/2 10:53:25:CommonFunc：138
+2024/1/2 10:53:25:7780 Connect socket time out! host:22.11.36.102 port:23456
+2024/1/2 10:53:25:申请传输信息结果：7780 Connect socket time out! host:22.11.36.102 port:23456
+2024/1/2 10:53:25:
+2024/1/2 10:53:25:Appling for address and port failed.Return code:;Return message:
+2024/1/2 10:53:25:Return code: ; Return message:; Return data:
+2024/1/2 10:53:45:通过page维度进行调阅影像
+2024/1/2 10:54:12:Begin applying address
+2024/1/2 10:54:12:报文信息：<?xml version="1.0" encoding="UTF-8"?><request><req_header><sys_code>COS1</sys_code><bank_code>003</bank_code><branch_code>00001</branch_code><operater_id>1234567</operater_id><trans_type>0000</trans_type><version>1.0</version><trans_time>2024-01-02T10:54:12+0800</trans_time><trans_id>3dc0c43953754a14a20921ab467c5bfe</trans_id><client_type>01</client_type><client_ip>192.168.232.1  </client_ip></req_header><req_body><image_storage_mech>00001</image_storage_mech><original_text>49552204164013178649356046941328</original_text><cipher_text>a98aab4eabb6b00c35970a1f10deafccfe0c68aec394c88db59874b7209a8d2a60392a0d922b9077</cipher_text></req_body></request>
+2024/1/2 10:54:12:添加连接超时
+2024/1/2 10:54:12:host：22.11.36.102   port:23456
+2024/1/2 10:54:15:socket关闭
+2024/1/2 10:54:15:CommonFunc：138
+2024/1/2 10:54:15:7780 Connect socket time out! host:22.11.36.102 port:23456
+2024/1/2 10:54:15:申请传输信息结果：7780 Connect socket time out! host:22.11.36.102 port:23456
+2024/1/2 10:54:15:
+2024/1/2 10:54:15:Appling for address and port failed.Return code:;Return message:
+2024/1/2 10:54:15:Return code: ; Return message:; Return data:

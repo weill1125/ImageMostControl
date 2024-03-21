@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F07FD885-4F62-4967-BCDA-0081656B2E73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCTW</RootNamespace>
+    <AssemblyName>CommonControlTemplateWidget</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Component\BasePanel.cs" />
+    <Compile Include="Base\Component\BaseTemplateControl.cs" />
+    <Compile Include="Business\Common\CommFunc.cs" />
+    <Compile Include="Business\Data\EnumType.cs" />
+    <Compile Include="Business\Interface\IBusinessXmlExport.cs" />
+    <Compile Include="Business\Interface\IXmlFileExchange.cs" />
+    <Compile Include="Business\Interface\IXmlDocOperate.cs" />
+    <Compile Include="Business\Interface\IXmlImageOperate.cs" />
+    <Compile Include="Business\Xml\XmlDocOperate.cs" />
+    <Compile Include="Business\Xml\XmlNodeOperate.cs" />
+    <Compile Include="CommonControlTemplateWidget.DesginProperty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CommFunc.cs" />
+    <Compile Include="Base\Event\ControlEvent.cs" />
+    <Compile Include="Support\Event\ButtonEvent.cs" />
+    <Compile Include="Business\Event\CustomEvent.cs" />
+    <Compile Include="CommonControlTemplateWidget.ExternalMethod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Support\GlobalCache\GlobalData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Business\Data\Property.cs" />
+    <Compile Include="Support\Interface\IXmlControlManage.cs" />
+    <Compile Include="Support\ProviderEffect\XmlControlManage.cs" />
+    <Compile Include="Support\ProviderEffect\DataManage.cs" />
+    <Compile Include="Business\Effect\EventFunc.cs" />
+    <Compile Include="Business\Effect\BusinessXmlExport.cs" />
+    <Compile Include="Support\Interface\IXmlControlTemplate.cs" />
+    <Compile Include="Support\XML\XmlControlTemplate.cs" />
+    <Compile Include="Business\Xml\XmlFileExchange.cs" />
+    <Compile Include="Support\TemplateControl\Controls.cs" />
+    <Compile Include="Business\Xml\XmlImageOperate.cs" />
+    <Compile Include="Business\Xml\XmlImageOperatePartial.cs" />
+    <Compile Include="Support\XML\XmlTemplateOperate.cs" />
+    <Compile Include="Base\Data\XMLOperate.cs" />
+    <Compile Include="Support\Panel\MainPanel.cs" />
+    <Compile Include="CommonControlTemplateWidget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControlTemplateWidget.Designer.cs">
+      <DependentUpon>CommonControlTemplateWidget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Component\AbstractBasePanel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\Panel\ChildPanel.cs" />
+    <Compile Include="Support\GlobalCache\EnumType.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CommonControlTemplateWidget.resx">
+      <DependentUpon>CommonControlTemplateWidget.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CCTW_XML.xml" />
+    <Content Include="ControlTemplate.xml" />
+    <Content Include="index.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
